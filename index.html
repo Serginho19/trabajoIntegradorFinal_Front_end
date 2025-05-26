@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@384&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="naranja">
+        <div>
+            <!--Aca vamos a agregar el logotipo y nombre de la página-->
+            <img src="Imagenes/white_logo_dark_background.jpg" alt="logotipo" width="150" height="100">
+            <img src="Imagenes/CrossFit.png" alt="Logo CrossFit" width="150" height="100">
+            <!--<img src="Imagenes/Crosspesa.png" alt="Logo Pesa CrossFit" width="150" height="100">-->
+            <!-- <h1 class="Rutinas">CrossFit</h1>-->
+            <!--<H1>Rutinas</H1>-->
+            <nav>
+            <!--Vamos a colocar aca las diferentes secciones de navegación de la pág Inicio, nuestra historia, productos, historias compartidas (lista UL en linea)-->
+                <ul class="lista">
+                    <li> <!--<a href= #>-->Inicio</a></li>
+                    <li > <a href="#Productos">Productos</a></li>
+                    <li >Nosotros</li>
+                    <li >Rutinas  </li>
+                    <li ><a href="#PlanAli">Alimentación</a> </li>
+                </ul>
+            </nav>
+        </div>
+            
+        <!-- Agregamos un video con explicación de qué es crossfit-->
+        <iframe class="videoy"
+            width="600" 
+            height="400" 
+            src="https://www.youtube.com/embed/FVlX5ZAxEUk" 
+            title="Introducción al CROSSFIT - ¿Qué es y por qué es tan popular?" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+    
+    </header>
+    
+    <main>
+        <!-- Agregamos los productos en venta, como entrenamiento dia 1,...,dia 7-->
+        <section>
+            <a id="Productos"></a>
+                <h2>Productos</h2>
+            <div class="productos">
+                <div >             
+                    <img src="Imagenes/Cross3.jpeg" alt="Rutina día 1" width="400 " height="300">
+                    <div>
+                        <h4>Pack 1: Entrenamiento de 2 días</h4>
+                        <span>$5.000</span>
+                    </div> 
+                </div>
+            
+                
+                <div > 
+                    <img src="Imagenes/Cross2.jpeg" alt="Rutina día 2" width="400 " height="300">
+                    <div>
+                        <h4>Pack 2: Entrenamiento de 3 días</h4>
+                        <span>$10.000</span>
+                    </div>
+                    
+                </div>
+                <div > 
+                    
+                    <img src="Imagenes/cross1.jpeg" alt="Rutina 5 días" width="400 " height="300">
+                    <div>
+                        <h4>Pack 3: Entrenamiento de 5 días</h4>
+                        <span>$20.000</span>
+                    </div>    
+                    
+                </div>
+                    
+                <div > 
+                    <img src="Imagenes/Alimentacion.jpeg" alt="alimentación" width="400 " height="300">
+                    <div>
+                        <h4>Plan de alimentación</h4>
+                        <span>$25.000</span>
+                    </div>
+                            
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+    <Article>
+        <!--Algo interesante como qué siginica CrossFit, o competencias grandes-->
+        <a id="PlanAli"></a>
+        <h2>Alimentación </h2>
+        <p>Para la alimentación en competiciones de alto rendimiento, la clave es una dieta equilibrada que proporcione energía, hidratos de carbono, proteínas y líquidos. Se recomienda consumir alimentos ricos en carbohidratos antes de la competencia, moderar las proteínas y evitar grasas. 
+        </p>
+        <p>Durante la competencia, es importante mantenerse hidratado y consumir bebidas con electrolitos, especialmente en deportes de resistencia o en climas cálidos. Después de la competencia, la recuperación incluye la reposición de líquidos y electrolitos, y la ingesta de proteínas para reparar los músculos.</p>
+      
+        <video controls poster="" muted width="600" height="400">
+            <source 
+                src="Videos/AlimentacionCrossfit.mp4" 
+                type="video/mp4"
+            >
+            <track
+                src="Videos/videoalimentacion.vtt"
+                kind="subtitles"
+                srclang="es"
+                label="Español"
+            
+            >
+     
+        
+           
+            Tu Navegador no soporta la reproducción de video
+
+        </video>
+    </Article>
+    <section>
+        <!--En el pie vamos a agregar como nos pueden contactar, donde nos encontramos(Googlemaps, y mandarnos algun formulario -->
+    </section>
+    <footer class="naranja">
+        <div>
+            <h2>Contactanos</h2>
+        </div>
+        <!-- formiularios de consulta e iconos nuestras redes sociales)-->
+         <!--Preguntar al profe como hacer para que se actualicen los campos cuando se haya enviado el form, queda con los datos antiguos.-->
+        <div>
+            <form action="https://formspree.io/f/xkgjdaqk" method="post">
+                <div>
+                    <Label for="nombnre">Nombre</Label>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                <div>
+                    <Label for="nombnre">Apellido</Label>
+                    <input type="text" name="Apellido" id="Apellido" placeholder="Escribe tu Apellido" required>
+                </div>
+
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+                </div>
+                <div>
+                    <label for="Teléfono">Teléfono</label>
+                    <input type="number" name="Teléfono" id="Teléfono" placeholder="Escribe tu número de Teléfono">
+                </div>
+                <div>
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="Mensaje" rows="5" cols="50">Escribe tu Mensaje </textarea>
+    
+                </div>
+                <div>
+                    <input type="submit" name="Enviar" id="Enviar"> 
+                </div>
+
+
+
+
+            </form>
+        </div>
+        <div>
+            <h2>¿Dónde nos encontramos?</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5723781083916!2d-58.47817362362124!3d-34.66550087293227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc942bf148693%3A0x688d3562ba17f20b!2sCorval%C3%A1n%202990%2C%20C1439%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1747614427325!5m2!1ses!2sar" width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+   
+        <div id="divfooterul">
+            <div >
+                <h4> @ 2025 Todos los derechos reservados a Sergio Dosantos.</h4>
+            </div>
+            <div >
+                <ul class="lista">
+                    <li id="lienlinea"><!--Instragram-->  <i class="fa-brands fa-square-instagram"></i></li>
+                    <li id="lienlinea"><!--Facebook--> <i class="fa-brands fa-square-facebook"></i></li>
+                    <li id="lienlinea"><!--Tiktok--> <i class="fa-brands fa-tiktok"></i></li>
+                    <li id="lienlinea"><!--Spotify--> <i class="fa-brands fa-spotify"></i></li>
+                    <li id="lienlinea"><!--YouTube--> <i class="fa-brands fa-youtube"></i></li>
+                    <li id="lienlinea"><!--Whatsapp--> <i class="fa-brands fa-square-whatsapp"></i></li>
+                </ul>
+            </div>
+                
+            
+        </div>
+    </footer>
+</body>
+</html>
