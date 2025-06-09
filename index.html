@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@384&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Index.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="naranja">
         <div>
@@ -22,18 +26,19 @@
             <nav>
             <!--Vamos a colocar aca las diferentes secciones de navegación de la pág Inicio, nuestra historia, productos, historias compartidas (lista UL en linea)-->
                 <ul class="lista">
-                    <li> <!--<a href= #>-->Inicio</a></li>
+                    <li> <a href= #>Inicio</a></li>
                     <li > <a href="#Productos">Productos</a></li>
-                    <li >Nosotros</li>
-                    <li >Rutinas  </li>
+                    <li ><a href="#Nosotros"> Nosotros</a></li>
                     <li ><a href="#PlanAli">Alimentación</a> </li>
+                    <li ><a href="#Mpago">Medios de pago</a></li>
+                    
                 </ul>
             </nav>
         </div>
             
         <!-- Agregamos un video con explicación de qué es crossfit-->
         <iframe class="videoy"
-            width="600" 
+            width="800" 
             height="400" 
             src="https://www.youtube.com/embed/FVlX5ZAxEUk" 
             title="Introducción al CROSSFIT - ¿Qué es y por qué es tan popular?" 
@@ -51,8 +56,8 @@
             <a id="Productos"></a>
                 <h2>Productos</h2>
             <div class="productos">
-                <div >             
-                    <img src="Imagenes/Cross3.jpeg" alt="Rutina día 1" width="400 " height="300">
+                <div class="productos1">             
+                    <img class="borde" src="Imagenes/Cross3.jpeg" alt="Rutina día 1" width="400 " height="300">
                     <div>
                         <h4>Pack 1: Entrenamiento de 2 días</h4>
                         <span>$5.000</span>
@@ -60,17 +65,17 @@
                 </div>
             
                 
-                <div > 
-                    <img src="Imagenes/Cross2.jpeg" alt="Rutina día 2" width="400 " height="300">
+                <div class="productos1"> 
+                    <img class="borde" src="Imagenes/Cross2.jpeg" alt="Rutina día 2" width="400 " height="300">
                     <div>
                         <h4>Pack 2: Entrenamiento de 3 días</h4>
                         <span>$10.000</span>
                     </div>
                     
                 </div>
-                <div > 
+                <div class="productos1"> 
                     
-                    <img src="Imagenes/cross1.jpeg" alt="Rutina 5 días" width="400 " height="300">
+                    <img class="borde" src="Imagenes/cross1.jpeg" alt="Rutina 5 días" width="400 " height="300">
                     <div>
                         <h4>Pack 3: Entrenamiento de 5 días</h4>
                         <span>$20.000</span>
@@ -78,8 +83,8 @@
                     
                 </div>
                     
-                <div > 
-                    <img src="Imagenes/Alimentacion.jpeg" alt="alimentación" width="400 " height="300">
+                <div class="productos1"> 
+                    <img class="borde" src="Imagenes/Alimentacion.jpeg" alt="alimentación" width="400 " height="300">
                     <div>
                         <h4>Plan de alimentación</h4>
                         <span>$25.000</span>
@@ -89,77 +94,108 @@
             </div>
         </section>
         
+        <section>
+            <a id="Nosotros"></a>
+                <h2>Nosotros</h2>
+                    <p>Somos una empresa Pyme dedicada al bienestar, somos como vos. Nos apasiona entrenar y buscamos un estilo de vida, mejorarla día a día y ser mejor</p>
+                    <p>Es por eso que fundamos nuestro negocio de venta de paquetes de rutinas para el entrenamiento de CrossFit</p>
+                    <p>Vendemos las rutinas más completas, que te ayudarn a mejorar tu performance y que te dejarán listo para una competencia.</p>
+
+
+        </section>
+        
+        <section>
+                <!--Algo interesante como qué siginica CrossFit, o competencias grandes-->
+            <a id="PlanAli"></a>
+                <h2>Alimentación </h2>
+                <p>Para la alimentación en competiciones de alto rendimiento, la clave es una dieta equilibrada que proporcione energía, hidratos de carbono, proteínas y líquidos. Se recomienda consumir alimentos ricos en carbohidratos antes de la competencia, moderar las proteínas y evitar grasas. 
+                </p>
+                <p>Durante la competencia, es importante mantenerse hidratado y consumir bebidas con electrolitos, especialmente en deportes de resistencia o en climas cálidos. Después de la competencia, la recuperación incluye la reposición de líquidos y electrolitos, y la ingesta de proteínas para reparar los músculos.</p>
+            
+                <video controls poster="" muted width="600" height="400">
+                    <source 
+                        src="Videos/AlimentacionCrossfit.mp4" 
+                        type="video/mp4"
+                    >
+                    <track
+                        src="Videos/videoalimentacion.vtt"
+                        kind="subtitles"
+                        srclang="es"
+                        label="Español"
+                    
+                    >
+            
+                
+                
+                    Tu Navegador no soporta la reproducción de video
+
+                </video>
+
+        </section>
 
     </main>
-    <Article>
-        <!--Algo interesante como qué siginica CrossFit, o competencias grandes-->
-        <a id="PlanAli"></a>
-        <h2>Alimentación </h2>
-        <p>Para la alimentación en competiciones de alto rendimiento, la clave es una dieta equilibrada que proporcione energía, hidratos de carbono, proteínas y líquidos. Se recomienda consumir alimentos ricos en carbohidratos antes de la competencia, moderar las proteínas y evitar grasas. 
-        </p>
-        <p>Durante la competencia, es importante mantenerse hidratado y consumir bebidas con electrolitos, especialmente en deportes de resistencia o en climas cálidos. Después de la competencia, la recuperación incluye la reposición de líquidos y electrolitos, y la ingesta de proteínas para reparar los músculos.</p>
-      
-        <video controls poster="" muted width="600" height="400">
-            <source 
-                src="Videos/AlimentacionCrossfit.mp4" 
-                type="video/mp4"
-            >
-            <track
-                src="Videos/videoalimentacion.vtt"
-                kind="subtitles"
-                srclang="es"
-                label="Español"
-            
-            >
-     
-        
-           
-            Tu Navegador no soporta la reproducción de video
-
-        </video>
-    </Article>
-    <section>
-        <!--En el pie vamos a agregar como nos pueden contactar, donde nos encontramos(Googlemaps, y mandarnos algun formulario -->
-    </section>
-    <footer class="naranja">
-        <div>
-            <h2>Contactanos</h2>
-        </div>
-        <!-- formiularios de consulta e iconos nuestras redes sociales)-->
-         <!--Preguntar al profe como hacer para que se actualicen los campos cuando se haya enviado el form, queda con los datos antiguos.-->
-        <div>
-            <form action="https://formspree.io/f/xkgjdaqk" method="post">
-                <div>
-                    <Label for="nombnre">Nombre</Label>
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre" required>
-                </div>
-                <div>
-                    <Label for="nombnre">Apellido</Label>
-                    <input type="text" name="Apellido" id="Apellido" placeholder="Escribe tu Apellido" required>
-                </div>
-
-                <div>
-                    <label for="Email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
-                </div>
-                <div>
-                    <label for="Teléfono">Teléfono</label>
-                    <input type="number" name="Teléfono" id="Teléfono" placeholder="Escribe tu número de Teléfono">
-                </div>
-                <div>
-                    <label for="Mensaje">Mensaje</label>
-                    <textarea name="Mensaje" id="Mensaje" rows="5" cols="50">Escribe tu Mensaje </textarea>
     
-                </div>
-                <div>
-                    <input type="submit" name="Enviar" id="Enviar"> 
-                </div>
+    
+    <footer class="naranja">
+        <section class="Mediopago1">
+            <div id="Mpago">
+                <h2>Medios de Pago</h2>
+                <ul id="Mediopago">
+                    <li><i class="fa-solid fa-money-bill-wave" style="color: hwb(40 96% 2%);"></i></li>
+                    <li><i class="fa-brands fa-cc-visa" style="color: hwb(40 96% 2%);"></i> </li>
+                    <li> <i class="fa-brands fa-cc-mastercard" style="color: hwb(40 96% 2%);"></i></li>
+                    <li><i class="fa-brands fa-cc-amex" style="color: hwb(40 96% 2%)"></i></li>
+                    <li><i class="fa-brands fa-cc-diners-club" style="color: hwb(40 96% 2%)"></i></li>
+                    <li><i class="fa-solid fa-qrcode" style="color: hwb(40 96% 2%)"></i></li>
+                    <li><i class="fa-solid fa-credit-card" style="color:hwb(40 96% 2%)"></i></li>
+                    <li><i class="fa-brands fa-bitcoin" style="color: hwb(40 96% 2%)"></i></li>
+
+                </ul>
+                <ul>
+                    <li>Aceptamos todos los medios de pagos</li>
+                    <li>15% de descuento pagando en efectivo o transferencia bancaria</li>
+                    <li>3 y 6 Cuotas sin interés</li>
+                </ul>
+                
+            </div>
+            <div id="Fondo_Trans">
+                <h2>Contáctanos</h2>
+            <!-- formiularios de consulta e iconos nuestras redes sociales)-->
+            <!--Preguntar al profe como hacer para que se actualicen los campos cuando se haya enviado el form, queda con los datos antiguos.-->
+            
+                <form action="https://formspree.io/f/xkgjdaqk" method="post">
+                    <div>
+                        <Label for="nombnre">Nombre: </Label>
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div>
+                        <Label for="nombnre">Apellido: </Label>
+                        <input type="text" name="Apellido" id="Apellido" placeholder="Escribe tu Apellido" required>
+                    </div>
+
+                    <div>
+                        <label for="Email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+                    </div>
+                    <div>
+                        <label for="Teléfono">Teléfono: </label>
+                        <input type="number" name="Teléfono" id="Teléfono" placeholder="Escribe tu número de Teléfono">
+                    </div>
+                    <div>
+                        <label>Tu Mensaje: </label>
+                        <textarea name="Mensaje" id="Mensaje" rows="2" cols="30">Escribe tu Mensaje </textarea>
+        
+                    </div>
+                    
+                        <input type="submit" name="Enviar" id="Enviar"> 
+                    
 
 
 
 
-            </form>
-        </div>
+                </form>
+            </div>
+        </section>
         <div>
             <h2>¿Dónde nos encontramos?</h2>
             <iframe 
@@ -171,6 +207,90 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
+        <section>
+            <div class="Resenias">
+                <div class="contenido_rese">
+                    
+                    <img class="borde1" src="imagenes/alvarito.jpg" alt="" > 
+                    
+                    <div>
+                        <span>Alvaro Hero</span><br>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i><br>
+                        <span>17/05/2025</span>
+                      
+                    </div>
+                    <p>"Logre resultados en poco tiempo, lo recomiendo"</p>
+                </div>
+                <div class="contenido_rese">
+                    
+                    <img class="borde" src="imagenes/Conor.jpg" alt="" > 
+                                    
+                        <div class="contenido_rese">
+                            <span>Alberto Conors</span><br>
+                            <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                            <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                            <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                            <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                            <i class="fa-solid fa-star" style="color: #19191a;"></i><br>
+                            <span>01/05/2025</span>
+                            <p>"Super desafiante, alto nivel y lo recomiendo 100%"</p>
+
+                        </div>
+                </div>
+                <div class="contenido_rese">
+                    <div>
+                    <img class="borde" src="imagenes/Fort.jpg" alt="" > 
+                    </div>
+                    <div>
+                        <span>Ricky Chocolate</span><br>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i><br>
+                        <span>22/04/2025</span>
+                        <p>"Me gustó! está bueno"</p>
+
+                    </div>
+                </div>
+                <div class="contenido_rese">
+                    <div>
+                    <img class="borde" src="imagenes/LAroca.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <span>Juan Piedra</span><br>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i><br>
+                        <span>15/04/2025</span>
+                        <p>"Las rutinas están bien, le agregaría algo más"</p>
+
+                    </div>
+                </div>
+                <div class="contenido_rese">
+                    <div>
+                    <img class="borde" src="imagenes/stallone.jpg" alt="" > 
+                    </div>
+                    <div>
+                        <span>Silvestre Napolitano</span><br>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i>
+                        <i class="fa-solid fa-star" style="color: #19191a;"></i><br>
+                        <span>01/04/2025</span>
+                        <p>"Lo estoy usando en mi GYM, los alumnos encantados"</p>
+
+                    </div>
+                </div>  
+            </div>
+        </section>
 
    
         <div id="divfooterul">
